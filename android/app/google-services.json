@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "89209270719",
+    "project_id": "volonariat",
+    "storage_bucket": "volonariat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89209270719:android:80cf6325e577d63039f10a",
+        "android_client_info": {
+          "package_name": "com.example.volontariat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZdP-EADUDcJ0FQACR0wWpLO8SFLwvDWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
