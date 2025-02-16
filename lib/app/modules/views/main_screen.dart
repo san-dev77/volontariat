@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
+import 'package:volontariat/app/modules/views/activity.dart';
 import 'package:volontariat/app/modules/views/home.dart';
 import 'package:volontariat/app/modules/views/landing.dart';
+import 'package:volontariat/app/modules/views/profil.dart';
 import 'package:volontariat/app/modules/views/rapport.dart';
 import 'package:volontariat/app/utils/colors.dart';
 
@@ -14,7 +16,12 @@ class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
 
   // Liste des écrans principaux
-  final List<Widget> _screens = [HomeScreen(), RapportScreen()];
+  final List<Widget> _screens = [
+    HomeScreen(),
+    RapportScreen(),
+    ActivityScreen(),
+    ProfileScreen()
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +37,9 @@ class _MainScreenState extends State<MainScreen> {
         items: [
           TabItem(icon: Icons.home, title: 'Accueil'),
           TabItem(icon: Icons.message_outlined, title: 'Rapports'),
+          TabItem(icon: Icons.add_chart_sharp, title: 'Activités'),
+          TabItem(icon: Icons.book, title: 'Guide'),
           TabItem(icon: Icons.person, title: 'Profil'),
-          TabItem(icon: Icons.settings, title: 'Paramètres'),
         ],
         initialActiveIndex: _currentIndex, // Par défaut, l'onglet actif
         onTap: (int index) {

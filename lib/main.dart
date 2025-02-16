@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:volontariat/app/modules/splash/splash_screen.dart';
+import 'package:volontariat/app/modules/views/home.dart';
 import 'package:volontariat/app/modules/views/landing.dart';
 import 'package:volontariat/app/modules/views/login.dart'; // Chemin de ton écran de connexion
 import 'package:volontariat/app/modules/views/main_screen.dart';
@@ -65,7 +66,7 @@ class AuthWrapper extends StatelessWidget {
 
     // Redirection vers l'écran de connexion si l'utilisateur est déconnecté
     if (user == null) {
-      return LoginScreen();
+      return Landing();
     } else {
       return MainScreen(); // Si l'utilisateur est connecté, rediriger vers la page d'accueil
     }
